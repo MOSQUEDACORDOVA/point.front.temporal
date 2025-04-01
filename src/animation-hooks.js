@@ -10,6 +10,13 @@ const animateIn = (element) =>
   });
 
 
+  const animateOut = (element) =>
+    anime({
+      targets: element,
+      translateX: ['0%', '-110%'], // Mover hacia la izquierda al salir
+      duration: 1000,
+      easing: 'easeInOutQuart',
+    });
 
 @lifecycleHooks()
 export class AnimationHooks {
@@ -18,6 +25,7 @@ export class AnimationHooks {
 
   created(vm, controller) {
     this.element = controller.host;
+    this.skipEnterAnimation = vm.constructor.skipEnterAnimation || false;
   }
 
   loading(vm, _params, _instruction, navigation) {
@@ -29,10 +37,12 @@ export class AnimationHooks {
   }
 
   attaching() {
-    animateIn(this.element);
+    if (!this.skipEnterAnimation) { // ⚡ Solo anima si no está deshabilitada
+      animateIn(this.element);
+    }
   }
 
   detaching() {
-    animateIn(this.element);
+    animateOut(this.element);
   }
 }
