@@ -10,6 +10,8 @@
   "dependencies": {
     "@aurelia/router": "latest",
     "@popperjs/core": "^2.11.8",
+    "animate.css": "^4.1.1",
+    "animejs": "^3.2.2",
     "aurelia": "latest",
     "bootstrap": "^5.3.3"
   },

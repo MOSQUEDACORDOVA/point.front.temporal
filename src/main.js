@@ -8,7 +8,7 @@ import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import './css/random.css';
 import './css/global.css';
 import './css/solicitudes-cliente.css';
-
+import 'animate.css';
 Aurelia
   //.register(RouterConfiguration)
   // To use HTML5 pushState routes, replace previous line with the following

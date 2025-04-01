@@ -1,8 +1,8 @@
 /* Esta e suna forma temporal de delcarar las variables de bootstrap */
 
 :root {
-    --bs-primary: #ff5733; /* Nuevo color primario */
-    --bs-primary-fuerte: #f00; /* esto se debe borrar */
+    --bs-primary: #009145; /* Nuevo color primario */
+    --bs-primary-fuerte: #006C34; /* esto se debe borrar */
     --bs-primary-rgb: 255, 87, 51;
     --link-color: var(--bs-primary); /* Color de los enlaces */
     --bs-btn-color: #ffffff; /* Color del texto del botón */
