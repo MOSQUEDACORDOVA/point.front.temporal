@@ -1,41 +1,66 @@
-/* Esta e suna forma temporal de delcarar las variables de bootstrap */
+/* Esta es una forma temporal de delcarar las variables de bootstrap */
 
 :root {
     --bs-primary: #009145; /* Nuevo color primario */
     --bs-primary-fuerte: #006C34; /* esto se debe borrar */
-    --bs-primary-rgb: 255, 87, 51;
+    --bs-primary-rgb: 0, 145, 69;
     --link-color: var(--bs-primary); /* Color de los enlaces */
     --bs-btn-color: #ffffff; /* Color del texto del botón */
     --bs-btn-border-color2: var(--bs-primary-fuerte); /* Color del borde del botón */
     --bs-border-color2:222, 226, 230;
-    --bs-link-color-rgb:33,37,41;
-    --bs-btn-hover-bg2:var(--bs-primary-fuerte);
+    --bs-link-color-rgb:var(--bs-primary-rgb);
+    --bs-link-color:#009145;
+    --bs-link-hover-color-rgb:0, 108, 52;
+    --bs-link-hover-color:var(--bs-primary-fuerte);
     --bs-btn-hover-border-color:var(--bs-primary-fuerte);
-    --bs-btn-active-bg:var(--bs-primary-fuerte);
     --bs-btn-active-border-color2:var(--bs-primary-fuerte);
-}
-
-.btn-primary {
-    background-color: var(--bs-primary); /* Usar var() para la variable */
-}
-.btn {
-    border-color: var(--bs-btn-border-color2);
-}
-.btn:hover{
-    background-color: var(--bs-btn-hover-bg2);
-    border-color: var(--bs-btn-hover-border-color2);
-}
-.text-primary {
-    color: var(--bs-primary);
-}
-.border-end {
+    --body-bg-color-rgb:rgb(253, 253, 255);
+    --body-bg-color-rgb:rgb(253, 253, 255);
+    --bs-primary-bg-subtle: #efdcff;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-hover-border-color: var(--bs-primary-fuerte) !important;
+    --bs-btn-bg:#009145 !important;
+  }
+  
+  .btn-primary {
+    --bs-btn-color: #fff;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-focus-shadow-rgb: 0, 145, 69;
+    --bs-btn-active-color: #fff;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+    --bs-btn-disabled-color: #fff;
+    --bs-btn-disabled-bg: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+  }
+  .btn-outline-primary {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+    --bs-btn-focus-shadow-rgb: 0, 145, 69;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+    --bs-btn-disabled-color: var(--bs-primary);
+    --bs-btn-disabled-border-color: var(--bs-primary);
+  }
+  .btn-link{
+    --bs-btn-focus-shadow-rgb:0, 145, 69;
+  }
+  .btn {
+    --bs-btn-focus-box-shadow: 0 0 0 0.25rem rgba(var(--bs-btn-focus-shadow-rgb), .5);
+  }
+  
+  .border-end {
     border-color: var(--bs-border-color2);
-}
-a:hover{
-    color: var(--bs-primary);
-}
-
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active{
-    background-color: var(--bs-primary-fuerte);
-    border-color: var(--bs-btn-active-border-color2);
-}
+  }
+  
+  [data-bs-theme="light"] .img-dark,
+  [data-bs-theme="dark"] .img-light {
+      display: none;
+  }

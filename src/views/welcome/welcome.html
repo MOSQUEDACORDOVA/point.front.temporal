@@ -1,19 +1,22 @@
-<!-- Start Section Loader -->
-<section class="loading_overlay d-flex flex-column vh-100">
-    <div class="container align-items-center d-flex flex-column justify-content-between h-100 py-5">
-        <div class="loader_logo d-flex justify-content-center h-100">
-            <img class="logo" src.bind="logo" />
-        </div>
-        <di class="secion-bienvenida bg-red d-flex flex-column align-items-center w-100 gap-4">
-            <div class="d-flex flex-column align-items-center">
-                <h1 class="display-1">Tu tiempo vale</h1>
-                <p>Y nosotros te lo ahorramos. . .</p>
-            </div>
-            <button class="btn btn-primary w-100 d-flex align-items-center" load="/inicio">
-                <div class="flex-grow-1 text-center">Ok, Veamos. . .</div>
-                <i class="hgi hgi-stroke hgi-circle-arrow-right-01 fs-3"></i>
-            </button>
-        </di>
-    </div>
-</section>
-<!-- End. Loader -->
+<div class="vh-100 cover-container d-flex w-100 h-100 p-3 mx-auto flex-column align-items-center justify-content-center">
+
+  <main class="px-3 h-100 d-flex flex-column align-items-center justify-content-center">
+    <!-- Start Section Loader -->
+    <section class="loading_overlay d-flex flex-column align-items-center justify-content-center h-100">
+      <div class="container align-items-center d-flex flex-column justify-content-between h-100">
+          <div class="loader_logo d-flex justify-content-center h-100">
+              <img src.bind="LogoLight" class="img-light logo" alt="Light Mode Image" />
+              <img src.bind="LogoDark" class="img-dark logo" alt="Dark Mode Image" />
+          </div>
+          <div class="secion-bienvenida bg-red d-flex flex-column align-items-center w-100 gap-4">
+              <div class="d-flex flex-column align-items-center">
+                  <h1 class="display-1">Tu tiempo vale</h1>
+                  <p class="fs-3">Y nosotros te lo ahorramos...</p>
+              </div>
+          </div>
+      </div>
+    </section>
+    <!-- End. Loader -->
+  </main>
+
+</div>
