@@ -17,7 +17,7 @@ Aurelia
   // customized router config.
   .register(RouterConfiguration.customize({ 
     useUrlFragmentHash: false,
-    title: '${componentTitles} ${appTitleSeparator} PrestaLider',
+    title: '${componentTitles} ${appTitleSeparator} Point',
   }))
   .app(MyApp)
   .start();
