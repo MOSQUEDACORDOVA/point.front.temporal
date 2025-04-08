@@ -60,7 +60,14 @@
     border-color: var(--bs-border-color2);
   }
   
+/* desactivar por ahora el dark */
+  .img-dark {
+    display: none !important;
+}
+
   [data-bs-theme="light"] .img-dark,
   [data-bs-theme="dark"] .img-light {
       display: none;
   }
+
+  
