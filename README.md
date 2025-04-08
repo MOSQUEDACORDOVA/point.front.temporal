@@ -42,3 +42,14 @@ firebase deploy --only hosting
 
 # LOGOS
 convert favicon.png -resize 48x48 favicon.ico
+
+
+# EXPORTAR APK
+
+npx cap add android
+
+npx capacitor-assets generate
+npm run build
+npx cap sync
+npx cap open android
+
