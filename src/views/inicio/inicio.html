@@ -1,0 +1,250 @@
+<main class="overflow-hidden overflow-x-hidden">
+  
+  <div class="navbar-sobre-mapa-inicio">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <nav class="navbar bg-body-tertiary border rounded-pill px-2" aria-label="Dark offcanvas navbar">
+            <div class="container ">
+              <div class="align-items-center d-flex w-100">
+                <button class="navbar-toggler ps-0 border-0 d-flex col-1" style="box-shadow: none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbarDark" aria-controls="offcanvasNavbarDark" aria-label="Toggle navigation">
+                  <i class="hgi hgi-stroke hgi-menu-02 fs-3 text-secondary"></i>
+                </button>
+                <div class="col-11 ps-2 ps-md-0">
+                  <a load="/escoger-origen" class="d-flex align-items-center justify-content-between text-decoration-none text-secondary">
+                    <p class="m-0">Escoge una ubicación</p>
+                    <div class="btn border-0 p-0 bg-transparent" load="/escoger-origen">
+                      <i class="hgi hgi-stroke hgi-circle-arrow-right-02 fs-3 text-secondary"></i>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              
+
+
+              <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbarDark" aria-labelledby="offcanvasNavbarDarkLabel">
+                <div class="offcanvas-header border-bottom">
+
+                  <img src.bind="LogoLightHorizontal" class="img-light img-fluid" alt="Light Mode Image" width="100">
+                  <img src.bind="LogoDarkHorizontal" class="img-dark img-fluid" alt="Dark Mode Image" width="100">
+
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                  <div class="alert alert-info mb-3" role="alert">
+                    💡 Acá podemos dejar un mensaje para atraer a las empresas si aún no se ha registrado. Ej:
+                  </div>
+
+                  <div class="card mb-3">
+                    <div class="card-body">
+                      <div>
+                        ¡Registra tu negocio en Point y llega a miles de personas.!
+                      </div>
+                      <a load="/formulario-proveedor" class="btn btn-primary w-100 mt-2 d-flex align-items-center justify-content-between rounded-pill" type="button">
+                       <div class="container"> Registrar mi negocio</div>
+                        <i class="hgi hgi-stroke hgi-circle-arrow-right-02 fs-3"></i>
+                      </a>
+
+                      <button class="mt-4 btn btn-outline-primary position-relative w-100 mt-2 d-flex align-items-center justify-content-between rounded-pill" type="button">
+                        <div class="container"> Más información</div>
+                        <i class="hgi hgi-stroke hgi-circle-arrow-right-02 fs-3"></i>
+                         <span class="position-absolute top-0 start-50 translate-middle badge rounded-pill bg-secondary">
+                          Este link lo enviaría a la landing 
+                        </span>
+                       </button>
+                    </div>
+                  </div>
+
+                  <div class="alert alert-info" role="alert">
+                    💡 Este sería el menú de una empresa que se ha registrado.
+                  </div>
+
+                  <div class="fs-2 text-center mb-3">
+                    Mis empresas
+                  </div>
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <h5 class="">Nombre de la empresa</h5>
+                      <div class="d-flex align-items-center gap-1 text-secondary ">
+                        <i class="hgi hgi-stroke hgi-location-01 fs-5 text-secondary"></i> 
+                        <small class="fw-bold">Ubicación:</small>
+                      </div>
+                      <div class="">
+                        Curva de molina con 92 C. 79A
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent justify-content-between d-flex align-items-center">
+                      Editar
+                      <i class="hgi hgi-stroke hgi-circle-arrow-right-02 fs-4 text-secondary"></i>
+                    </div>
+                  </div>
+
+                  <div class="card mb-2">
+                    <div class="card-body">
+                      <h5 class="">Nombre de la empresa</h5>
+                      <div class="d-flex align-items-center gap-1 text-secondary ">
+                        <i class="hgi hgi-stroke hgi-location-01 fs-5 text-secondary"></i> 
+                        <small class="fw-bold">Ubicación:</small>
+                      </div>
+                      <div class="">
+                        Curva de molina con 92 C. 79A
+                      </div>
+                    </div>
+                    <div class="card-footer bg-transparent justify-content-between d-flex align-items-center">
+                      Editar
+                      <i class="hgi hgi-stroke hgi-circle-arrow-right-02 fs-4 text-secondary"></i>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div id="mapInicio" class="w-100 vh-100"></div>
+  
+  <div class="contenedorInferiorMapa position-absolute w-100">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="carousel-mc col-lg-8 mb-2">
+          <div class="swiper swiperMC swiper-mc-moudule">
+              <div class="swiper-wrapper text-white">
+                  <div class="swiper-slide swiper-mc-slide-mdule">
+                      <div class="animated-box contenedor-slider-module w-100">
+                          <img src="/reels/reel-1.webp" class="img-fluid">
+                          <div class="content-mc-module pb-2 w-100">
+                            <div class="container">
+                              <p class="fs-6 fw-bold multi-line-truncate mb-0">MarDonals en la playa</p>
+                              <div class="text-warning" style="font-size: 0.6rem;">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i> <!-- estrella vacía -->
+                              </div>
+                            </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide swiper-mc-slide-mdule">
+                      <div class="animated-box contenedor-slider-module w-100">
+                          <img src="/reels/reel-2.webp" class="img-fluid">
+                          <div class="content-mc-module pb-2 w-100">
+                            <div class="container">
+                              <p class="fs-6 fw-bold multi-line-truncate mb-0">Pepitos express</p>
+                              <div class="text-warning" style="font-size: 0.6rem;">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i> <!-- estrella vacía -->
+                              </div>
+                            </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide swiper-mc-slide-mdule">
+                      <div class="animated-box contenedor-slider-module w-100">
+                          <img src="/reels/reel-3.webp" class="img-fluid">
+                          <div class="content-mc-module pb-2 w-100">
+                            <div class="container">
+                              <p class="fs-6 fw-bold multi-line-truncate mb-0">Arepa Araguaney </p>
+                              <div class="text-warning" style="font-size: 0.6rem;">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i> <!-- estrella vacía -->
+                              </div>
+                            </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide swiper-mc-slide-mdule">
+                      <div class="animated-box contenedor-slider-module w-100">
+                          <img src="/reels/reel-4.webp" class="img-fluid">
+                          <div class="content-mc-module pb-2 w-100">
+                            <div class="container">
+                              <p class="fs-6 fw-bold multi-line-truncate mb-0">Perros Express </p>
+                              <div class="text-warning" style="font-size: 0.6rem;">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i> <!-- estrella vacía -->
+                              </div>
+                            </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide swiper-mc-slide-mdule">
+                      <div class="animated-box contenedor-slider-module w-100">
+                          <img src="/reels/reel-5.webp" class="img-fluid">
+                          <div class="content-mc-module pb-2 w-100">
+                            <div class="container">
+                              <p class="fs-6 fw-bold multi-line-truncate mb-0">Cachapa y Cochino Frito </p>
+                              <div class="text-warning" style="font-size: 0.6rem;">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i> <!-- estrella vacía -->
+                              </div>
+                            </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide swiper-mc-slide-mdule">
+                      <div class="animated-box contenedor-slider-module w-100">
+                          <img src="/reels/reel-6.webp" class="img-fluid">
+                          <div class="content-mc-module pb-2 w-100">
+                            <div class="container">
+                              <p class="fs-6 fw-bold multi-line-truncate mb-0">Catalina y Queso </p>
+                              <div class="text-warning" style="font-size: 0.6rem;">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i> <!-- estrella vacía -->
+                              </div>
+                            </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+                  <div class="swiper-slide swiper-mc-slide-mdule">
+                      <div class="animated-box contenedor-slider-module w-100">
+                          <img src="/reels/reel-7.webp" class="img-fluid">
+                          <div class="content-mc-module pb-2 w-100">
+                            <div class="container">
+                              <p class="fs-6 fw-bold multi-line-truncate mb-0">Arepas Peponas </p>
+                              <div class="text-warning" style="font-size: 0.6rem;">
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star-fill"></i>
+                                <i class="bi bi-star"></i> <!-- estrella vacía -->
+                              </div>
+                            </div>
+                              
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>      
+  </div>
+</main>

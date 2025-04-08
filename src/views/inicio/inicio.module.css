@@ -1,0 +1,40 @@
+.carousel-mc .swiper-mc-moudule .contenedor-slider-module img {
+    width: 100%;
+    height: 220px;
+    cursor: grab;
+}
+
+.carousel-mc .swiper-mc-slide-mdule {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-mc .swiper-mc-slide-mdule img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.content-mc-module{
+    bottom: 0;
+    position: absolute;
+}
+
+.content-mc-module{
+    background:linear-gradient(to bottom, rgba(0,0,0,0.1), rgba(0,0,0,1));
+}
+.contenedor-slider-module{
+    position: relative;
+    overflow: hidden;
+    border-radius: 8px;
+}
+
+@media (min-width: 992px) {
+    .carousel-mc .swiper-mc-moudule .contenedor-slider-module img {
+        height: 300px;
+    }
+}

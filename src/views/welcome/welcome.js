@@ -15,7 +15,7 @@ export class Welcome {
   
     attached() {
       setTimeout(() => {
-        //this.router.load('login'); // Ajusta según tu ruta
+        this.router.load('sign-in'); // Ajusta según tu ruta
       }, 6000);
     }
   }
